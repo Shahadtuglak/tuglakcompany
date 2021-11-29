@@ -1,38 +1,355 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    font-family: 'Josefin Sans', sans-serif !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar-brand{
+    color: white !important;
+}
+
+.navbar{
+    background-color: #434B7B !important;
+    padding: 0 4rem;
+}
+
+.nav-link{
+    margin: 10px;
+    font-weight: bold;
+    font-size: large;
+    list-style-type: none;
+    color: white !important;
+}
+
+.nav-link:hover{
+    border-bottom: 1px solid red;
+    padding-bottom: 3px;
+}
+
+.navbar-light .navbar-toggler-icon{
+    background-image: url("https://miro.medium.com/max/400/1*kuxd7dcJMbtRbdlgeIh80Q.png") !important;
+    
+   
+}
+
+
+/*Hero Section*/
+.heroSection{
+    min-height: 100vh;
+    background-color: #434B7B;
+    color: white;
+
+}
+
+.divider p{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    line-height: .1em;
+    margin: 2rem 0 2rem;
+}
+
+.divider p span{
+    background-color: white;
+    padding: 0 10px;
+}
+
+.btn{
+    background-color: #434B7B !important;
+    color: white !important;
+}
+
+.socialLogo{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid grey;
+    padding: 2px;
+}
+
+.rightSection form{
+    padding: 1rem;
+    background-color: white !important;
+    color: black;
+    font-weight: bolder !important;
+    border-radius: 5px !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.leftSection h3{
+    font-weight: bold;
+}
+
+
+.clients{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+
+
+form .btn{
+    width: 100% !important;
+}
+
+
+/*Pricing Section*/
+
+.pricingContent{
+    height: 20vh;
+
+    
+}
+
+.pricingContent h2 span{
+    color: #434B7B !important;
+    font-weight: bolder !important;
+}
+
+.pricingButton .btn{
+    width: 100% !important;
+}
+
+
+
+/* Testimonial Section */
+.testimonialSection{
+    width: 100% !important;
+    background-color: #fff;
+    margin: 3rem 0;
+    overflow: hidden;
+}
+
+.testimonialSection .container{
+    max-width: 1240px;
+    padding: 1rem;
+    margin: auto;
+}
+
+.testimonialSection .container h3{
+    font-weight: bolder;
+}
+
+
+
+ .outline{
+    background-image: linear-gradient(to left, rgba(73,50,173,0.5), rgba(73,50,173,0.9)), url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm380-06-knyga9fh.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=25f647cb816c7dcfd1386aa02d346b62') !important;
+    color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-position: left;
+    padding: 3rem;
+    font-weight: bold;
+
+}
+
+
+/* Contact Section */
+
+input{
+    font-weight: bold !important;
+}
+
+.form-outline{
+    font-weight: bold !important;
+}
+
+.contactLeftSection h2{
+    font-weight: bold;
+}
+
+.contactLeftSection p span{
+    color: blue;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.contactRightSection .btn{
+    margin-top: 1rem!important;
+}
+
+
+
+/*  Footer Section  */
+
+.footerSection{
+    
+    color: white;
+    background-color: #434B7B;
+    margin: 0!important;
+}
+
+.subscribeSection .btn{
+    background-color: #7434C3 !important;
+
+
+}
+
+
+
+
+
+/* Media Query */
+/* Mobile Screen */
+@media (max-width: 768px) {
+
+    .heroSection{
+        display: block;
+    }
+
+    .leftSection{
+       padding: 2rem 4rem !important;
+    }
+
+    .rightSection{
+       padding: 2rem;
+    }
+
+    .pricing{
+        display: block;
+        margin: 1rem;
+        
+    }
+
+    .contactSection{
+        padding: 1rem;
+    }
+
+    .footerSection{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 4rem 1rem;
+        justify-content: space-around;
+    }
+
+
+    .section5{
+        padding:1rem;
+    }
+
+
+    
+    .subscribeSection{
+        display: flex;
+       
+
+    }
+    
+    .subscribeSection button{
+        margin-left: 0.5rem;
+       
+    }
+
+  
+    
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  /* Tablet Screen */
+  @media (min-width: 769px) and (max-width: 1023px) {
+    .heroSection{
+        display: block;
+        padding: 10px;
+        
+    }
+    .pricing{
+        display: flex;
+        justify-content: space-around;
+        margin: 2rem 1rem 2rem 1rem;
+    }
 
-.App-link {
-  color: #61dafb;
-}
+    .contactSection{
+        padding: 1rem;
+    }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    
+    .footerSection{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+        justify-content: space-around;
+    }
+
+    .subscribeSection{
+        display: flex;
+        justify-content: space-around;
+
+    }
+    
+    .subscribeSection button{
+        margin-left: 1rem;
+    }
+    
+   
   }
-  to {
-    transform: rotate(360deg);
+
+  /* Desktop Screen */
+  @media (min-width: 1024px) {
+
+    .heroSection{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    
+    .leftSection{
+        width: 50% !important;
+        padding: 5rem;
+    }
+
+    .rightSection{
+        width: 50% !important;
+        margin: 4rem;
+    }
+
+    .pricing{
+        display: flex;
+        justify-content: space-around;
+        margin: 2rem 1rem 2rem 1rem;
+    }
+
+    .contactSection{
+        display: flex;
+        justify-content: space-around;
+        margin: 2rem 8rem;
+    
+    }
+
+    .contactLeftSection{
+        width: 50%;
+        padding: 2rem;
+    }
+
+
+    .contactRightSection{
+        width: 50%;
+        padding: 2rem;
+       
+    }
+
+
+    .footerSection{
+        display: flex;
+        justify-content: space-around;
+        padding: 3rem;
+        
+    }
+
+    .subscribeSection{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .subscribeSection button{
+        margin-left: 1rem;
+    }
+    
+
+   
+
+     
   }
-}
