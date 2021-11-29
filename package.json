@@ -1,6 +1,6 @@
 {
-  "name": "financial-company",
-  "homepage": "https://Shahadtuglak.github.io/tuglakcompany",
+  "name": "tuglakcompany",
+  "homepage": "https://github.com/Shahadtuglak/tuglakcompany",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
