@@ -15,7 +15,7 @@ body{
 
 .navbar{
     background-color: #434B7B !important;
-    padding: 0 4rem;
+    padding: 0 1rem !important;
 }
 
 .nav-link{
@@ -51,7 +51,7 @@ body{
     text-align: center;
     border-bottom: 1px solid grey;
     line-height: .1em;
-    margin: 2rem 0 2rem;
+    margin: 1rem 0 1rem;
 }
 
 .divider p span{
